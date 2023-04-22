@@ -119,6 +119,7 @@ console.log("=========================================================");
 
 let index = 0;
 
+// Recorrido
 while(index < object1.length) {
 
     console.log("Data array in while:", object1[index]);
