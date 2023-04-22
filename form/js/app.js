@@ -117,10 +117,11 @@ for(x = 0; x < object1.length; x++) {
 // División consola
 console.log("=========================================================");
 
-/*
 let index = 0;
 
 while(index < object1.length) {
 
     console.log("Data array in while:", object1[index]);
-} */
+
+    index++;
+}
