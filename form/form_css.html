@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/cssform.css">
 
     <script src="js/app.js"></script>
+    <script src="js/val.js"></script>
 
   </head>
   
@@ -19,25 +20,33 @@
 
       <h1>Login</h1>
 
-      <form method="post">
+      <form method="post" id="fralogin" name="fralogin">
 
         <div class="txt_field">
 
           <label>Nombre Usuario</label>
 
-          <input type="text">
+          <input type="text" id="userName" name="userName" required>
 
         </div>
 
         <div class="txt_field">
 
-          <label for="userPassword">Contraseña</label>
+          <label>Correo</label>
 
-          <input type="password"> 
+          <input type="text" id="userEmail" name="userEmail" required> 
 
         </div>
 
-        <input type="submit" value="Iniciar Sesión">
+        <div class="txt_field">
+
+          <label>Contraseña</label>
+
+          <input type="text" id="userPass" name="userPass" required> 
+
+        </div>
+
+        <input onclick="validar()" value="Iniciar Sesión">
 
         <div class="link_Ayuda">
           Olvido Contraseña? <a href="#">Clic Aquí</a>
